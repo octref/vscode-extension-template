@@ -1,0 +1,38 @@
+{
+  "name": "vscode-extension-template",
+  "displayName": "vscode-extension-template",
+  "description": "A cleaner template for writing VS Code extension",
+  "version": "0.0.1",
+  "publisher": "octref",
+  "engines": {
+    "vscode": "^1.18.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./dist/index",
+  "activationEvents": [
+    "onCommand:extension.helloWorld"
+  ],
+  "contributes": {
+    "commands": [
+      {
+        "command": "extension.sayHello",
+        "title": "Hello World"
+      }
+    ]
+  },
+  "scripts": {
+    "vscode:prepublish": "npm run compile",
+    "postinstall": "node ./node_modules/vscode/bin/install"
+  },
+  "devDependencies": {
+    "@types/node": "^8.0.51",
+    "prettier": "^1.8.2",
+    "tslint": "^5.8.0",
+    "tslint-xo": "^0.3.0",
+    "typescript": "^2.6.1",
+    "vscode": "^1.1.6"
+  },
+  "dependencies": {}
+}
