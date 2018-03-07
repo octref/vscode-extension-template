@@ -24,16 +24,16 @@
   },
   "scripts": {
     "vscode:prepublish": "npm run compile",
-    "compile": "tsc -p .",
-    "watch": "tsc -w -p .",
+    "compile": "tsc -p tsconfig.json",
+    "dev": "tsc -w -p tsconfig-dev.json",
     "postinstall": "node ./node_modules/vscode/bin/install"
   },
   "devDependencies": {
-    "@types/node": "^8.0.51",
-    "prettier": "^1.8.2",
-    "tslint": "^5.8.0",
-    "typescript": "^2.6.1",
-    "vscode": "^1.1.6"
+    "@types/node": "^9.4.6",
+    "prettier": "^1.11.1",
+    "tslint": "^5.9.1",
+    "typescript": "^2.7.2",
+    "vscode": "^1.1.11"
   },
   "dependencies": {}
 }

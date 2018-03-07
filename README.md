@@ -4,7 +4,8 @@ A cleaner template for writing VS Code extension.
 
 ## Changes over default template
 
-- TS 2.6.1 with `strcit`, `noInplicitAny`, `noUnusedLocals`.
+- Relaxed `tsconfig.json` for development.
+- Strict `tsconfig.json` with `strcit`, `noInplicitAny` and `noUnusedLocals` for prod build.
 - Enforce styling using prettier and tslint
   - 2 space indentation
   - single quote
@@ -16,7 +17,8 @@ A cleaner template for writing VS Code extension.
 
 ## Usage
 
-- `npm run watch`
+- `yarn compile` to build
+- `yarn dev` to watch change and build
 - F5 to run & debug
 
 ## License
